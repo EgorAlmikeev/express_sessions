@@ -1,0 +1,12 @@
+doctype html
+html(lang='en')
+  head
+    title= 'Users'
+  body
+    h4#author(title='GossJS') Egor
+    h1 Пример работы шаблонизатора
+    #container
+      p Список логинов:
+      ol
+        each item in items
+          li= item.login
